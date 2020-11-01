@@ -6,6 +6,9 @@
   "workspaces": [
     "packages/*"
   ],
+  "scripts": {
+    "clean": "sh ./scripts/clean.sh"
+  },
   "devDependencies": {
     "rimraf": "^3.0.2"
   }
