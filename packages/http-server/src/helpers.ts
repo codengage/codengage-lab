@@ -18,31 +18,31 @@ export const noContent = (): HttpResponse => ({
 export const badRequest = (error?: { [key: string]: any }): HttpResponse => ({
   statusCode: 400,
   body: {
-    message: 'bad request',
-    error,
+    error: 'bad request',
+    message: error instanceof Error ? error.message : error,
   },
 })
 
 export const unauthorized = (error?: { [key: string]: any }): HttpResponse => ({
   statusCode: 401,
   body: {
-    message: 'unauthorized',
-    error,
+    error: 'unauthorized',
+    message: error instanceof Error ? error.message : error,
   },
 })
 
 export const forbidden = (error?: { [key: string]: any }): HttpResponse => ({
   statusCode: 403,
   body: {
-    message: 'forbidden',
-    error,
+    error: 'forbidden',
+    message: error instanceof Error ? error.message : error,
   },
 })
 
 export const serverError = (error?: { [key: string]: any }): HttpResponse => ({
   statusCode: 500,
   body: {
-    message: 'internal server error',
-    error,
+    error: 'internal server error',
+    message: error instanceof Error ? error.message : error,
   },
 })
