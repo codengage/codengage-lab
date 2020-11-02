@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "../../.build-cache/http-server-koa.tsbuildinfo"
+  },
+  "references": [
+    { "path": "../http-server" }
+  ],
+  "exclude": ["node_modules", "dist"]
+}
