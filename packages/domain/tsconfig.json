@@ -3,7 +3,7 @@
   "compilerOptions": {
     "outDir": "dist",
     "rootDir": "src",
-    "tsBuildInfoFile": "../../.build-cache/core.tsbuildinfo"
+    "tsBuildInfoFile": "../../.build-cache/domain.tsbuildinfo"
   },
   "references": [
     { "path": "../fp" }
