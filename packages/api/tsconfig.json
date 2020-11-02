@@ -1,0 +1,18 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "../../.build-cache/api.tsbuildinfo"
+  },
+  "references": [
+    { "path": "../fp" },
+    { "path": "../domain" },
+    { "path": "../http-server"},
+    { "path": "../http-server-koa" },
+    { "path": "../criptography" },
+    { "path": "../criptography-jwt" },
+    { "path": "../criptography-bcrypt" }
+  ],
+  "exclude": ["node_modules", "dist"]
+}
