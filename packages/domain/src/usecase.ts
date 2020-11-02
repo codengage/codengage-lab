@@ -2,7 +2,7 @@ import { Either } from '@codengage/fp'
 
 import { Failure } from './failure'
 
-export type UseCase<Params = unknown, Result = unknown, F extends Failure = Failure> = (
+export type UseCase<Params = any, Result = any, F extends Failure = Failure> = (
   params: Params,
 ) => Promise<Either<F, Result>>
 
