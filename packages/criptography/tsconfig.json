@@ -1,0 +1,12 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "../../.build-cache/criptography.tsbuildinfo"
+  },
+  "references": [
+    { "path": "../domain" }
+  ],
+  "exclude": ["node_modules", "dist"]
+}
