@@ -1,1 +1,1 @@
-export type Port<Params = unknown, Result = unknown> = (params: Params) => Result
+export type Port<Params = any, Result = any> = (params: Params) => Result
