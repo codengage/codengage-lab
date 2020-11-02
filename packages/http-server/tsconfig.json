@@ -1,0 +1,9 @@
+{
+  "extends": "../../tsconfig.base.json",
+  "compilerOptions": {
+    "outDir": "dist",
+    "rootDir": "src",
+    "tsBuildInfoFile": "../../.build-cache/http-server.tsbuildinfo"
+  },
+  "exclude": ["node_modules", "dist"]
+}
